@@ -1,0 +1,17 @@
+{
+	"name": "fact_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedService1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Fact_Delitos"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

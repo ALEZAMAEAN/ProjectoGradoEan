@@ -1,0 +1,45 @@
+{
+	"name": "Dim_ubicaciones",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Dim_ubicacion.csv",
+				"container": "curated"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Tipo_ubicacion",
+				"type": "String"
+			},
+			{
+				"name": "Desc_ubicacion",
+				"type": "String"
+			},
+			{
+				"name": "Longitud",
+				"type": "String"
+			},
+			{
+				"name": "Latitud",
+				"type": "String"
+			},
+			{
+				"name": "Id_ubicacion",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

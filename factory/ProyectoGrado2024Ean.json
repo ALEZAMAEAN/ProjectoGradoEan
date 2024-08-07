@@ -1,0 +1,9 @@
+{
+	"name": "ProyectoGrado2024Ean",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2e9e2c67-94fd-4aca-ac48-0a2e3d843a26",
+		"tenantId": "c06fb559-1b68-4b84-a14f-47d0d837a5ab"
+	}
+}

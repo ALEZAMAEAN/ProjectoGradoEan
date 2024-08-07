@@ -1,0 +1,45 @@
+{
+	"name": "Fact_delitos",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Fact_delitos_m10.csv",
+				"container": "curated"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Id_fecha",
+				"type": "String"
+			},
+			{
+				"name": "Id_ubicacion",
+				"type": "String"
+			},
+			{
+				"name": "Id_tipo_delito",
+				"type": "String"
+			},
+			{
+				"name": "Id_arma",
+				"type": "String"
+			},
+			{
+				"name": "Num_cantidad",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
